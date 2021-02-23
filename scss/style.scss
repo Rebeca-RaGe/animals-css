@@ -1,0 +1,63 @@
+@import "cat-face";
+@import "cat-paw";
+@import "cat-body";
+@import "mokuno";
+@import "bird-face";
+@import "bird-body";
+@import "bird-paw";
+@import "frog-head";
+@import "frog-body";
+@import "frog-paw";
+@import "animations";
+
+:root {
+  //Cat
+  --skin-color: #da986b;
+  //Bird
+  --bird-skin-color: #1496c0;
+  --bird-head-color: #ffd402;
+  --bird-wings-color: #12881f;
+  --bird-cheeks-color: #2e2628;
+  //Frog
+  --frog-skin-color: #77ac2e;
+  --frog-belly-color: #f5efb7;
+  --frog-face-width: 7rem;
+  --frog-face-height: 3.5rem;
+  --frog-eye-height: 2rem;
+  --frog-eye-width: 2rem;
+  --frog-cheek-color: #f7c694;
+  //General
+  --font-title: "Galindo", cursive;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #000;
+  font-family: var(--font-title);
+  text-align: center;
+}
+
+.group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  background-color: #ddd;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.cat,
+.bird,
+.frog {
+  padding: 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

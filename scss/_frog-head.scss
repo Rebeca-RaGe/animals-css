@@ -1,0 +1,116 @@
+.frog-head {
+  margin: 0 0.5rem;
+  &-eyes {
+    display: flex;
+    justify-content: space-around;
+
+    .frog-eye {
+      margin: 0;
+      top: 0.7rem;
+    }
+
+    .frog-eye-left {
+      position: relative;
+      background-color: var(--frog-skin-color);
+      height: var(--frog-eye-height);
+      width: var(--frog-eye-width);
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      border-right: 1px solid hsl(85, 58%, 33%);
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0.4rem;
+        left: 0.4rem;
+        width: 1.2rem;
+        height: 1.4rem;
+        background-color: #fff;
+        border-radius: 50%;
+        z-index: 2;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0.8rem;
+        left: 0.8rem;
+        width: 0.5rem;
+        height: 0.6rem;
+        background-color: #000;
+        border-radius: 50%;
+        z-index: 2;
+      }
+    }
+
+    .frog-eye-right {
+      position: relative;
+      background-color: var(--frog-skin-color);
+      height: var(--frog-eye-height);
+      width: var(--frog-eye-width);
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      border-right: 1px solid hsl(85, 58%, 33%);
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0.4rem;
+        left: 0.4rem;
+        width: 1.2rem;
+        height: 1.4rem;
+        background-color: #fff;
+        border-radius: 50%;
+        z-index: 2;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0.8rem;
+        left: 0.8rem;
+        width: 0.5rem;
+        height: 0.6rem;
+        background-color: #000;
+        border-radius: 50%;
+        z-index: 2;
+      }
+    }
+  }
+
+  &-face {
+    position: relative;
+    width: var(--frog-face-width);
+    height: var(--frog-face-height);
+    border-radius: 50%;
+    background-color: var(--frog-skin-color);
+    border-bottom: 1px solid hsl(85, 58%, 33%);
+    z-index: 1;
+
+    &-cheeks {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 0.3rem;
+
+      .frog-cheek {
+        position: relative;
+        top: 1.3rem;
+        width: 0.7rem;
+        height: 0.8rem;
+        background-color: var(--frog-cheek-color);
+        border-radius: 50%;
+      }
+    }
+
+    &-mouth {
+      position: relative;
+      top: 0.5rem;
+      left: 1.5rem;
+      height: 0.6rem;
+      width: 3.2rem;
+      border: 0.2rem solid var(--bird-cheeks-color);
+      border-color: var(--bird-cheeks-color) transparent transparent transparent;
+      border-radius: 50%/0.5rem 0.5rem 0 0;
+      transform: rotate(180deg);
+      z-index: 1;
+    }
+  }
+}

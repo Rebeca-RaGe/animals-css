@@ -1,0 +1,208 @@
+.cat-face {
+  position: relative;
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  background-color: #000;
+  margin: 1rem;
+
+  .ears {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ear {
+    position: relative;
+    height: 0;
+    width: 0;
+    border-left: 1.8rem solid transparent;
+    border-bottom: 2.2rem solid #000;
+    border-right: 1.8rem solid transparent;
+    z-index: 1;
+
+    &-left {
+      position: relative;
+      align-self: flex-start;
+      top: -0.8rem;
+      left: -0.6rem;
+      transform: rotate(-35deg);
+      &::before {
+        content: "";
+        position: absolute;
+        height: 0;
+        width: 0;
+        border-left: 1.2rem solid transparent;
+        border-bottom: 1.6rem solid var(--skin-color);
+        border-right: 1.2rem solid transparent;
+        top: 0.4rem;
+        left: -1.2rem;
+        z-index: 2;
+      }
+    }
+
+    &-right {
+      top: -0.8rem;
+      right: -1.3rem;
+      align-self: flex-end;
+      transform: rotate(35deg);
+      &::before {
+        content: "";
+        position: absolute;
+        height: 0;
+        width: 0;
+        border-left: 1.2rem solid transparent;
+        border-bottom: 1.6rem solid var(--skin-color);
+        border-right: 1.2rem solid transparent;
+        top: 0.4rem;
+        left: -1.2rem;
+        z-index: 2;
+      }
+    }
+  }
+
+  .eyes {
+    display: flex;
+    flex-direction: row;
+    z-index: 3;
+
+    .eye {
+      background-color: #ecc900ef;
+      height: 1.9rem;
+      width: 1.3rem;
+      border-radius: 40%;
+
+      &-left {
+        position: absolute;
+        left: 2rem;
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: #000;
+          width: 1.2rem;
+          height: 1.2rem;
+          border-radius: 50%;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: #fff;
+          width: 0.5rem;
+          height: 0.5rem;
+          border-radius: 50%;
+          top: 0.1rem;
+          left: 0.2rem;
+        }
+      }
+      &-right {
+        position: absolute;
+        left: 4.5rem;
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: #000;
+          width: 1.2rem;
+          height: 1.2rem;
+          border-radius: 50%;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: #fff;
+          width: 0.5rem;
+          height: 0.5rem;
+          border-radius: 50%;
+          top: 0.1rem;
+          left: 0.2rem;
+        }
+      }
+    }
+  }
+
+  .nouse {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 0.5rem solid transparent;
+    border-top: 0.7rem solid var(--skin-color);
+    border-right: 0.5rem solid transparent;
+    top: 5rem;
+    left: 3.4rem;
+  }
+
+  .whiskers {
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+
+    .whisker {
+      background-color: #fff;
+      width: 1.4rem;
+      height: 2px;
+      margin: 0.3rem 0;
+
+      &-top {
+        position: absolute;
+        top: 4.6rem;
+        left: 1.8rem;
+        transform: rotate(15deg);
+        &::before {
+          content: "";
+          position: absolute;
+          width: 1.4rem;
+          height: 2px;
+          top: -0.7rem;
+          left: 2.7rem;
+          transform: rotate(-28deg);
+          background-color: #fff;
+        }
+      }
+      &-middle {
+        position: absolute;
+        top: 4.9rem;
+        left: 1.8rem;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 1.4rem;
+          height: 2px;
+          left: 2.8rem;
+          background-color: #fff;
+        }
+      }
+      &-bottom {
+        position: absolute;
+        top: 5.1rem;
+        left: 1.8rem;
+        transform: rotate(-15deg);
+        &::before {
+          content: "";
+          position: absolute;
+          width: 1.4rem;
+          height: 2px;
+          top: 0.7rem;
+          left: 2.7rem;
+          background-color: #fff;
+          transform: rotate(26deg);
+        }
+      }
+    }
+  }
+}
+
+.collar {
+  position: absolute;
+  width: 4rem;
+  height: 1rem;
+  background-color: red;
+  top: 7.5rem;
+  left: 26%;
+  .plate {
+    position: absolute;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: yellow;
+    transform: rotate(45deg);
+    left: 1.6rem;
+    top: 0.5rem;
+  }
+}

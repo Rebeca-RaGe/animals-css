@@ -1,0 +1,22 @@
+// Cat
+/*
+ - Move eyes following you
+ - Move tail and toes
+ - Scale whiskers scale
+*/
+.move-whiskers {
+  animation: moving-whiskers 2s ease-in-out;
+}
+
+@keyframes moving-whiskers {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
